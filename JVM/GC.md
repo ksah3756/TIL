@@ -11,8 +11,8 @@
 1. 도달 가능성 분석 알고리즘: 자바에서 사용, 루트 객체들을 시작 노드 집합으로 사용하고 루트로부터 도달 불가능한 객체는 죽은 객체로 판단
 
 <img src="https://velog.velcdn.com/images/cksgodl/post/a223e3d6-df10-4e65-b4c2-4ccd3c8f5487/image.png">
-> 출처: [JVM 밑바닥까지 파헤치기 3장 - 가비지 컬렉터와 메모리 할당 전략
-](https://velog.io/@cksgodl/JVM-%EB%B0%91%EB%B0%94%EB%8B%A5%EA%B9%8C%EC%A7%80-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-3%EC%9E%A5-%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%ED%84%B0%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%ED%95%A0%EB%8B%B9-%EC%A0%84%EB%9E%B5)
+
+출처: [[JVM 밑바닥까지 파헤치기] 3장 - 가비지 컬렉터와 메모리 할당 전략](https://velog.io/@cksgodl/JVM-%EB%B0%91%EB%B0%94%EB%8B%A5%EA%B9%8C%EC%A7%80-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-3%EC%9E%A5-%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%ED%84%B0%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%ED%95%A0%EB%8B%B9-%EC%A0%84%EB%9E%B5)
 
 GC Root: **GC가 객체 그래프 탐색을 시작할 때, 절대 삭제하면 안 되는 기본 출발점 노드
 GC Root에 포함되는 객체들은 주로 아래와 같은 곳에 위치**
