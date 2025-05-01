@@ -116,6 +116,13 @@ try {
 }
 ```
 
+`ReentrantLock` + `Condition` 이 `synchronized` 에 비해 갖는 장점
+
+- 여러 개의 조건 변수 생성 가능 → **상태별 대기 큐를 분리할 수 있음**
+- **tryLock()으로 데드락 회피 가능 (락 획득 시도 후 바로 결과가 반환)**
+- lock.lockInterruptibly()로 **interrupt 시 락 대기 중단 가능 (**`synchronized` 는 뮤텍스 대기중엔 인터럽트되어도 스레드가 깨어나지 않음)
+
+
 ## 생산자 - 소비자 문제
 
 생산자(Producer): 데이터를 생성해서 **공유 버퍼에 넣음**
